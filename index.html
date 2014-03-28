@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Suchas by Jias</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Suchas</h1>
+        <p>用一行代码说明javascript的一个基础知识点</p>
+
+        <p class="view"><a href="https://github.com/Jias/suchas">View the Project on GitHub <small>Jias/suchas</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/Jias/suchas/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/Jias/suchas/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/Jias/suchas">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81" class="anchor" href="#%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81"><span class="octicon octicon-link"></span></a>一行代码</h1>
+
+<h3>
+<a name="%E7%94%A8%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%AF%B4%E6%98%8Ejavascript%E7%9A%84%E4%B8%80%E4%B8%AA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9" class="anchor" href="#%E7%94%A8%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E8%AF%B4%E6%98%8Ejavascript%E7%9A%84%E4%B8%80%E4%B8%AA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="octicon octicon-link"></span></a>用一行代码说明javascript的一个基础知识点</h3>
+
+<p>对象实例的<code>__proto__</code>属性指向该实例的构造函数的<code>prototype</code>对应的对象。</p>
+
+<pre><code>[].__proto__ === Array.prototype; // true
+</code></pre>
+
+<p>把类数组转换成数组</p>
+
+<pre><code>Array.isArray([].slice.call(arguments)); // true
+</code></pre>
+
+<p>当索引源被重新赋值时...</p>
+
+<pre><code>var a = {'a':'a'}; var b = a; a = {}; console.log(b); // {'a':'a'}
+</code></pre>
+
+<p>在<code>replace</code>中使用<code>$&amp;</code>插入匹配到的字符串。</p>
+
+<pre><code>'hi'.replace(/[hi]/g, '($&amp;)');; // (h)(i)
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/Jias">Jias</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
