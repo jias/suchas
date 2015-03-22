@@ -1,4 +1,4 @@
-## 用一行代码说明javascript的一个基础知识点
+## 用一行代码说明javascript的一个基础知识点或小技巧
 
 对象实例的`__proto__`属性指向该实例的构造函数的`prototype`对应的对象。
 ```js
@@ -29,4 +29,10 @@ var a = {'a':'a'}; var b = a; a = {}; console.log(b); // {'a':'a'}
 ```js
 '0'.charAt(1) === ''; // true
 '0'[1] === undefined; // true
+```
+
+可读性更强的打印JSON字符串的方法
+
+```js
+console.log(JSON.stringify({name:’fushan’}, null, 2));
 ```
