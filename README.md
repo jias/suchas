@@ -43,9 +43,14 @@ var a = {'a':'a'}; var b = a; a = {}; console.log(b); // {'a':'a'}
 console.log(JSON.stringify({name:’fushan’}, null, 2));
 ```
 
-俄文的字母`а`，有些"坏人"会用它玩人，要小心！当然也可以用它"误导"别人。
+眼见不一定为实，下面这些俄文字母，有些"坏人"会用它玩人，要小心！当然也可以用它"误导"别人。
 
 ```
-console.log('а' == 'a'); // false
+console.log('а' === 'a'); // false
+console.log('о' === 'o'); // false
+console.log('р' === 'p'); // false
+console.log('х' === 'x'); // false
+console.log('с' === 'c'); // false
+console.log('у' === 'y'); // false
 
 ```
