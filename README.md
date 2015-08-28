@@ -40,7 +40,7 @@ var a = {'a':'a'}; var b = a; a = {}; console.log(b); // {'a':'a'}
 可读性更强的打印JSON字符串的方法
 
 ```js
-console.log(JSON.stringify({name:’fushan’}, null, 2));
+console.log(JSON.stringify({nickName:'fushan', realName:'gnosaij'}, null, 2));
 ```
 
 眼见不一定为实，下面这些俄文字母，有些"坏人"会用它玩人，要小心！当然也可以用它"误导"别人。
