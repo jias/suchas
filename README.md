@@ -45,7 +45,7 @@ console.log(JSON.stringify({nickName:'fushan', realName:'gnosaij'}, null, 2));
 
 眼见不一定为实，下面这些俄文字母，有些"坏人"会用它玩人，要小心！当然也可以用它"误导"别人。
 
-```
+```js
 console.log('а' === 'a'); // false
 console.log('о' === 'o'); // false
 console.log('р' === 'p'); // false
@@ -53,4 +53,10 @@ console.log('х' === 'x'); // false
 console.log('с' === 'c'); // false
 console.log('у' === 'y'); // false
 
+```
+
+查看页面的最后更新时间
+
+```js
+document.lastModified
 ```
