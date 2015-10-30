@@ -55,8 +55,34 @@ console.log('у' === 'y'); // false
 
 ```
 
-查看页面的最后更新时间
+查看页面的最后构建(build)时间
 
 ```js
 document.lastModified
 ```
+
+用ES6(ES2015)对换两个变量的值如此简单
+
+```js
+[v1, v2] = [v2, v1];
+```
+
+还在用`'abc'.indexOf('a') > -1`吗？OUT!
+
+```js
+if (~'abc'.indexOf('a')) {
+    console.log('yes');
+}
+```
+
+还在用`new Date().getTime()`吗？LOW!
+
+```js
+console.log(+new Date());
+console.log(Date.now());
+```
+
+
+
+
+
