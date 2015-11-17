@@ -79,7 +79,11 @@ document.lastModified
 console.log(+new Date(), Date.now());
 ```
 
+告诉IE使用最新的引擎渲染网页，`chrome=1`则可以激活`Chrome Frame`.
 
+```html
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+```
 
 
 
